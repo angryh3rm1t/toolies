@@ -1,0 +1,20 @@
+LOCATIONS
+ * ~/.aws/credentials
+ * ~/.aws/config
+
+GENERAL
+ * aws s3 [anything]
+ * aws ec2 [anything]
+ * aws iam [anything]
+
+ENUMERATION
+ * aws ec2 [--region whatever] describe-key-pairs 
+				        images
+					security-groups
+			       authorize-security-groups-ingress 
+
+ * aws iam [--region whatever] list-users -output table
+			       put-user-policy 
+
+ * aws s3api [--region whatever] list-objects --bucket BUCKETNAME --output json 
+
